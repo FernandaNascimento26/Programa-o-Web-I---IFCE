@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>Formulário de pesquisa</title>
+</head>
+<body>
+    <h1 id="title">Formulário de pesquisa</h1>
+    <p id="description">Por favor,  preencha este formulário com as informações necessárias</p>
+    <form  id="survey-form">
+        <fieldset>
+        <label id="name-label">Digite seu primeiro nome:<input id="name" type="text" required placeholder="Marshall Liu" required></label>
+        <label id="email-label">Digite seu sobrenome:<input id="email" type="email" placeholder="Marshallliu@icloud.com" required></label>
+        <label id="number-label">idade(opcional)<input id="number" type="number" placeholder="32" name="age" min="13" max="99" required></label>
+
+    <label for="programa">Você é ?</label>
+    <select name="programa" id="dropdown">
+        <option value="Desenvolvedor">Desenvolvedor ou desenvolvedora de software</option>
+        <option value="desenvolvedora Web">Desenvolvedor ou desenvolvedora Web</option>
+        <option value="Business Intelligence">Analista de Business Intelligence</option>
+        <option value="segurança da informação">Especialista em segurança da informação</option>
+        <option value="Estudante T.I">Estudante T.I</option>
+    </select>
+    
+        <p> Qual é o seu genero?</p>
+        <label for="genero-masculino"><input   class="inline" id="genero-masculino" type="radio" name="genero-type" />Masculino</label>
+        <label for="genero-feminino"><input   class="inline" id="genero-feminino" type="radio" name="genero-type" />Feminino</label>
+        <label for="business-account"><input   class="inline" id="business-account" type="radio" name="genero-type" />Não binario</label>
+       <label for="business-account"><input   class="inline" id="business-account" type="radio" name="genero-type" />Outros</label>
+    <label for="bio">Fale sobre você:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu sou um estudante de..."></textarea>
+        </label>
+         <label for="terms-and-conditions" name="terms-and-conditions"><p> Deseja receber  notificações no E-mail?</p>
+          <input  value="sim" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Sim, Quero
+          <input  value="nao" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Não, Obrigado 
+        </label>
+        <input  id="submit" type="submit" value="Submit" />
+        </fieldset>
+    </form>
+    
+</body>
+</html>
